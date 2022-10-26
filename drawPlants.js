@@ -6,7 +6,7 @@ https://society6.com/product/abstract-art-minimal-plant_print
 https://society6.com/product/abstract-agave-plant_print
 https://society6.com/product/abstract-cactus-i_print?sku=s6-13457507p4a1v45
 https://society6.com/product/abstract-cactus-ii_print?sku=s6-13457569p4a1v45
-
+*/
 
 
 let w = 500;

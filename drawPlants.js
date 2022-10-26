@@ -1,4 +1,4 @@
-// TODO split this script into two .js files, 1 w/ function to draw the plants, another 1 with code for each plant
+// TODO to make more iterations, split this script into two .js files, 1 w/ function to draw the plants, another 1 with code for each plant
 
 let w = 500;
 let h = w * 1.3;
@@ -28,20 +28,21 @@ function draw () {
   noStroke();
   
   // SUN
+  push();
   // // slight rotate
   // angleMode(degrees);
   // rotate(-30, 0);
-  // translate( 15, -184);
+  // translate(9, -230);
   // // 90-degree rotate
   // angleMode(radians);
   // rotate(HALF_PI, 0);
-  // translate(0,-200);
+  // translate(-10,-250);
 
   fill(255, 196, 86);
-  arc(100, 100, 130, 130, PI, 0, CHORD); // light
-
+  arc(130, 120, 150, 150, PI, 0, CHORD); // light
   fill(248, 169, 84);
-  arc(100, 100, 130, 130, 0, PI, CHORD); // dark
+  arc(130, 120, 150, 150, 0, PI, CHORD); // dark
+  pop();
 
   // CLOUDS
   // fill(233, 224, 207);
@@ -91,7 +92,6 @@ function draw () {
   // TALL-CACTUS
   fill(110, 172, 110);
   rect(180, 200, 120, 400, 100); // outer
-  
   fill(143, 233, 143);
   rect(220, 200, 40, 400, 100); // inner
 
@@ -112,7 +112,6 @@ function draw () {
     line(x, y, x + 5, y + 5);
     line(x, y, x + 5, y - 5);
   }
-
   line(189, 230, 186, 222);
   line(189, 230, 182, 231);
   line(220, 204, 222, 196);
@@ -130,13 +129,10 @@ function draw () {
   // TRIANGLE-CACTUS
   fill(128, 202, 172);
   triangle(150, 400, 160, 540, 90, 540); // mid-right
-
   fill(166, 233, 199);
   triangle(75, 380, 160, 540, 90, 540); // mid-left
-
   fill(183, 217, 131);
   triangle(200, 420, 160, 540, 90, 540); // far-right
-
   fill(139, 195, 167);
   triangle(30, 450, 160, 540, 90, 540); // far-left
 
@@ -171,16 +167,12 @@ function draw () {
   push();
   rotate(HALF_PI, 0);
   translate(120,-840);
-
   fill(173, 225, 89);
   arc(360, 480, 180, 130, 0, PI, CHORD); // light-1
-
   fill(153, 192, 83);
   arc(360, 480, 180, 130, PI, 0, CHORD); // dark-1
-
   fill(173, 225, 89);
   arc(360, 480, 180, 70, PI, 0, CHORD); // light-2
-
   fill(153, 192, 83);
   arc(360, 480, 180, 70, 0, PI, CHORD); // dark-2
   pop(); 
@@ -188,23 +180,41 @@ function draw () {
  // ARC-CACTUS SPIKES
   stroke(196, 134, 66);
   strokeWeight(1.5);
-  for (let y = 390; y < 540; y += 60) {
-    let x = 360;
-    line(x, y, x - 5, y - 5);
-    line(x, y + 30, x + 5, y + 25);
-  }
-  
-  line(335, 405, 345, 415);
-  line(335, 435, 325, 445);
-
-
-  line(395, 480, 400, 475);
+  line(340, 385, 350, 395); // left-out
+  line(320, 400, 330, 410);
+  line(305, 425, 315, 435);
+  line(290, 455, 300, 465);
+  line(290, 485, 300, 495);
+  line(300, 520, 310, 530);
+  line(345, 410, 355, 420); // left-in
+  line(330, 425, 340, 435);
+  line(320, 450, 330, 460);
+  line(345, 450, 355, 460);
+  line(340, 475, 350, 485);
+  line(315, 480, 325, 490);
+  line(345, 505, 355, 515);
+  line(318, 508, 328, 518);
+  line(340, 530, 350, 540);
+  line(375, 410, 365, 420); // right-in
+  line(390, 425, 380, 435);
+  line(400, 450, 390, 460);
+  line(375, 450, 365, 460);
+  line(380, 475, 370, 485);
+  line(405, 480, 395, 490);
+  line(375, 505, 365, 515);
+  line(402, 508, 392, 518);
+  line(380, 530, 370, 540);
+  line(380, 385, 370, 395); // right-out
+  line(400, 400, 390, 410);
+  line(415, 425, 405, 435);
+  line(430, 455, 420, 465);
+  line(430, 485, 420, 495);
+  line(420, 520, 410, 530);
   noStroke();
 
  // POT
   fill(226, 134, 131);
   quad(60,540, 350, 540, 280, 649, 90, 649); // left
-
   fill(205, 98, 95);
   quad(350, 540, 440, 540, 410, 649, 280, 649); // right
 

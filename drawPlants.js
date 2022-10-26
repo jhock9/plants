@@ -1,4 +1,13 @@
 // TODO to make more iterations, split this script into two .js files, 1 w/ function to draw the plants, another 1 with code for each plant
+/* ideas
+https://stock.adobe.com/images/cute-cactus-set-different-types-of-cacti-in-patterned-plant-pots-vector-illustrations-succulent-isolated-outlined-icon-collection/246193758
+https://society6.com/product/summer-stack-abstract-plant-illustration_print
+https://society6.com/product/abstract-art-minimal-plant_print
+https://society6.com/product/abstract-agave-plant_print
+https://society6.com/product/abstract-cactus-i_print?sku=s6-13457507p4a1v45
+https://society6.com/product/abstract-cactus-ii_print?sku=s6-13457569p4a1v45
+
+
 
 let w = 500;
 let h = w * 1.3;
